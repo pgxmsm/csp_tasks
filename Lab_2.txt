@@ -1,0 +1,142 @@
+LAB 2 Tasks:
+
+Task 1;
+
+#include <iostream> //including input/output stream  
+using namespace std; // using standard Library
+
+int main(){
+    int x = 3; //initializing and declaring variable x
+    int y = 7; //initializing and declaring variable y
+
+     int sum = x + y; //storing x+y result in variable sum 
+    int diff = x-y; //storing x-y result in variable diff
+    int division = x / y; //storing x divide y result in variable division
+    int product = x * y; //storing x*y result in variable product
+
+    cout << "The sum of x and y is = "  << sum << endl ; // // showing output for sum of x and y
+    cout << "The differnce of x and y is = "  << diff << endl ; // // showing output for difference of x and y
+    cout << "The product of x and y is = "  << product << endl ; // here we are getting product 
+    cout << "The division of x and y is = "  << division<< endl ; // showing output for x dividing by y
+
+
+    system("pause"); // using for pausing console for output...
+    return 0; // ending main function here
+}
+
+// Name : Muhammad Soban Muslim 
+// CMS ID : 534642
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Task 2:
+
+#include <iostream> //including input/output stream  
+using namespace std; // using standard Library
+
+int main(){
+    int x , y ; // here I am initializing two variables at same line
+    cout << "Enter Number 1: " ; //console output  for instruction
+    cin >> x; // here we are getting input from user and assigning it into x variable
+    cout << "Enter Number 2: "; //console output  for instruction
+    cin >> y;  // here we are getting input from user and assigning it into y variable
+    int result = x%y ; // here we are getting remainder by % (MOD) opperator in result variable
+    cout << "Remainder of Number 1 and Number 2 = "  << result << endl ; // aslo we are displaying it on console 
+    
+   
+
+
+    system("pause");
+    return 0; //exiting function here
+}
+
+//Name: Muhammad Soban Muslim
+// CMS-id: 534642
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Task 3:
+
+#include <iostream> //including input/outpu stream
+using namespace std; //using standard library
+
+int main(){
+    int x = 7 ; //declaring and assigning variable x
+    int y = 9 ; //declaring and assigning variable y
+    
+    
+    cout << "x is equal to y: "    << (x==y) << endl; //comparing x and y to get true or false 1 or 0 . are they equal
+    cout << "x is not equal to y: "    << (x!=y) << endl;
+    //comparing x and y to get true or false 1 or 0 . are they not equal 
+   
+
+
+    system("pause"); 
+    return 0; // exiting main function
+}
+
+// Name : Muhammad Soban Muslim 
+// CMS ID : 534642
+--------------------------------------------------------------------------------------------------------------------------
+
+Task 4:
+
+#include <iostream> //including input oputput stream
+using namespace std;  // using standard library
+
+int main(){
+    int x , y ; //declaring variable x and y
+    cout << "Enter Number 1: " ; //console output for instruction
+    cin >> x;  // gtting user input and assigning it to x
+    cout << "Enter Number 2: "; // console output for instruction
+    cin >> y; // getting user input and assigning it to y 
+    
+    
+    cout << "x is greater than  y: "    << (x>y) << endl  ; // checking whether x is greater than y
+    cout << "x is  less than y: "    << (x<y) << endl   ;  // checking whether x is less than y
+    cout << "x is not equal to y: "    << (x!=y) << endl; // checking whether x and y are not equal
+    cout << "x is equal to y: "    << (x==y) << endl; // checking whether x and y are equal
+   
+
+
+    system("pause"); // pausing console
+    return 0; // exiting main function
+}
+// Name: Muhammad Soban Muslim
+//CMS id : 534642
+
+------------------------------------------------------------------------------------------------------------------
+
+Home Task:
+  #include <iostream> // including input output stream
+using namespace std; // using standard library
+
+int main(){
+
+    int x , y ; // declaring two variables x and y
+    cout << "Enter Number x: "; // console output for instruction
+    cin >> x;  // gettting user input and assigning it to x
+    cout << "Enter Number y: "; // console output for instruction
+    cin >> y; // gettting user input and assigning it to y
+
+    int sum = x + y; //storing x+y result in variable sum 
+    int diff = x-y; //storing x-y result in variable diff
+    int division = x / y; //storing x divide y result in variable division
+    int product = x * y; //storing x*y result in variable product
+
+    cout << "The Sum of x and y = " << sum << endl ; // displaying sum of x and y on console
+    cout << "The Difference of x and y = " << diff << endl ; // displaying diference of x and y on console
+    cout << "The Product of x and y = " << product << endl ; // displaying product of x and y on console
+    cout << "The Divison of x and y = " << division << endl ; // displaying division of x and y on console
+    cout << "x is greater than y = " << (x > y) << endl ; // displaying whether x > y or not on console
+    cout << "x is less than y = " << (x < y) << endl ; // displaying whether x id less than y or not on console
+    cout << "x is equal to y = " << (x == y) << endl ; // displaying whether x is equal to y or not on console
+    cout << "x is not equal to y = " << (x != y) << endl ; // displaying whether x isn't equal to y or not  on console
+
+
+    system("pause"); //pausing console
+    return 0; // exiting main function
+}
+//Name : Muhammad Soban Muslim
+//CMS Id: 534642
+
+
