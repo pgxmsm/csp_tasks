@@ -1,0 +1,133 @@
+Lab 3 Tasks:
+
+Task 1:
+
+#include <iostream> //including input output stream 
+using namespace std; // using standard library
+
+int main(){
+
+    int u_height ; // declaring variable u_height
+    cout << "Enter height in cm:"; // console output for instructions
+    cin >> u_height; // here getting user input and assigning it to u_height variable
+    
+    // below we are using if and else statement , if user input is greater than or equal to 120 then console will
+    // give output that is written. else the else block will execute .
+    if(u_height >= 120){
+    cout << "You are allowed to ride the roller coaster.\n";
+    }
+    else{
+        cout << "Sorry, you are not tall enough to ride the roller coaster.\n";
+    };
+
+
+    system("pause"); // pausing console 
+    return 0; // exiting main function
+}
+
+// // name = Muhammad Soban Muslim
+// // CMS id = 534642
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Task 2:
+#include <iostream> //including input output stream 
+using namespace std; // using standard library
+
+int main(){
+
+    int v_speed ; // declaring variable v_speed
+    cout << "Enter Speed of Vehicle in km/h:"; // console output for instructions
+    cin >> v_speed; // here getting user input and assigning it to v_speed variable
+
+    // below we are using if and else statement , if user input is greater than or equal to 0 then if block will run
+    // . else the else block will execute .
+    
+    if(v_speed >= 0){
+
+        if(v_speed < 20){cout << "Very Slow" << endl; } // if speed is less than 20 it will execute
+        else if((v_speed >= 20) && (v_speed <= 60)){cout << "Normal Speed" << endl; } //if speed is 20-60 it will execute
+        else if((v_speed >= 61) && (v_speed <= 120)){cout << "Fast" << endl; } //if speed is 61-120 it will execute
+        else if((v_speed > 120)){cout << "Very Fast"<< endl; } //if speed is greater than 120 it will execute
+    
+
+    }
+    // if speed is less than 0 or negative else will execute
+    else{
+        cout << "Invalid speed entered."; 
+    };
+    system("pause"); // pausing console
+    return 0; // wxiting main function
+}
+
+// name = Muhammad Soban Muslim
+// CMS id = 534642  
+
+------------------------------------------------------------------------------------------------------------------------------------------
+Task 3:
+
+#include <iostream> //including input output stream 
+using namespace std; // using standard library
+
+int main(){
+
+    int x , y , z ; // declaring 3 variables x,y,z
+    cout << "Enter 1st side of triangle:"; // console output for instructions
+    cin >> x;  // getting user input for side 1 and assigning it to x variable
+    cout << "Enter 2nd side of triangle:"; // console output for instructions
+    cin >> y; // getting user input for side 2 and assigning it to y variable
+    cout << "Enter 3rd side of triangle:"; // console output for instructions
+    cin >> z; // getting user input for side 3 and assigning it to z variable
+    
+    
+    if(((x + y > z) && (x + z > y) && (y + z > x))){
+    // I add this to check whether sides make triangle or not
+        if((x == y) && (y==z)){cout << "Equilateral Triangle" << endl; }
+        else if((x==y) || (x==z) || (y==z)){cout << "Isosceles Triangle." << endl; } 
+        else if((x!=y) && (y!=z)){cout << "Scalene Triangle." << endl;} 
+        else{
+            cout<<"Wrong inputs;";
+        }
+    }
+    else{
+        cout << "It is not a triangle.";
+    };
+    system("pause");
+    return 0;
+}
+
+// name = Muhammad Soban Muslim
+// CMS id = 534642 
+
+-----------------------------------------------------------------------------------------------------------------------------------
+HomeTask:
+
+#include <iostream> //including input output stream 
+using namespace std; // using standard library
+
+int main(){
+    double x ,bonus_amount , total_salary ; // declaring variable x(for basic salary), bonus amount and total salary
+    double bonus_percentage = 0 ;
+    int  y ; // declaring variable y
+    cout << "Enter Basic Salary: "; // console output for instructions
+    cin >> x;  // getting user input for Basic Salary and assigning it to x variable
+    cout << "Enter year of Experience: "; // console output for instructions
+    cin >> y;  // getting user input for Year of experience and assigning it to y variable
+  
+        if(y>10){
+           bonus_percentage = 20;
+        }
+        else if(y>=5){
+            bonus_percentage = 10;
+        }
+            cout << "Basic Salary: "<<x<<endl;
+            bonus_amount = x * (bonus_percentage / 100);
+            total_salary = x + bonus_amount ;
+            cout << "Bonus Ammount: "<<bonus_amount<<endl;
+            cout << "Total Salary: "<<total_salary<<endl; 
+    
+    system("pause");
+    return 0;
+}
+
+// name = Muhammad Soban Muslim
+// CMS id = 534642 
