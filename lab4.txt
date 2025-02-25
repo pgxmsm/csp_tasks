@@ -1,0 +1,383 @@
+LAB 4:
+Name: Muhammad Soban Muslim
+Task 1:
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	cout << "Select Movie Genre:" << endl;
+	cout << "Enter 1 or 'A' or 'a' for Action.\nEnter 2 or 'C' or 'c' for Comedy\nENter 3 or 'H' or 'h' for Horror\nEnter 4 or 'D' or 'd' for Drama\n::";
+    char x;
+	cin >> x;
+	switch (x)
+	{
+		case 'A':
+		case 'a':
+		case '1':
+            cout << "\n-----------------------------" <<endl ;
+			cout << "Selected Genre: Action.\nGenerating Ticket......" << endl;
+			break;
+		case 'C':
+		case 'c':
+		case '2':
+            cout << "\n-----------------------------" <<endl ;
+			cout << "Selected Genre: Comedy.\nGenerating Ticket......" << endl;
+			break;
+		case 'H':
+		case 'h':
+		case '3':
+            cout << "\n-----------------------------" <<endl ;;
+			cout << "Selected Genre: Horror.\nGenerating Ticket......" << endl;
+			break;
+		case 'D':
+		case 'd':
+		case '4':
+            cout << "\n-----------------------------" <<endl ;
+			cout << "Selected Genre: Drama.\nGenerating Ticket......" << endl;
+			break;
+	default:
+		break;
+	}
+
+	//system("pause");
+	return 0;
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------
+Task 2:
+#include <iostream>
+using namespace std;
+
+int main() {
+	int x , y;
+
+	cout << "Enter Number:";
+	cin >> x;
+	cout << "\nSelect 1 to check if the number is even , 2 to check Odd and 3 to check Prime: ";
+	cin >> y;
+	switch (y)
+	{
+	case 1:
+		if (x % 2==0) {
+			cout << "The Number " << x << " is Even.";
+		}
+		else {
+			cout << "The Number " << x << " is not Even.";
+		}
+		break;
+	case 2:
+	    
+		if (x % 2== 0) {
+			cout << "The Number " << x << " is not Odd.";
+		}
+		else {
+			cout << "The Number " << x << " is Odd.";
+		}
+		break;
+	case 3:
+            if(x <= 1){
+                cout << "The number " << x << " is not a Prime Number.";
+            } 
+			else{
+                int i;
+                for (i = 2; i < x; i++) {
+                    if (x % i == 0)
+                        break;
+                }
+                if (i == x)
+                    cout << "The number " << x << " is a Prime Number.";
+                else
+                    cout << "The Number " << x << " is NOT a Prime Number.";
+            }
+            break;
+	default:
+    cout << "Wrong input....";
+		break;
+	}
+	return 0;
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------
+Task 3:
+#include <iostream>
+using namespace std;
+
+int main() {
+	int x , y;
+
+	cout << "Enter 1 For Economy, 2 for SUV and 3 for Luxary:";
+	cin >> x;
+	
+	switch (x)
+	{
+	case 1:
+			cout << "Enter 1 for Toyta Corolla , 2 for Honda Civic :";
+            cin >> y;
+            switch (y)
+            {
+            case 1:
+                cout << "\nSelected Category:Economy.\nSelecte Model: Toyata Crolla.";
+                break;
+            case 2:
+                cout << "\nSelected Category:Economy.\nSelecte Model: Honda Civic.";
+                break;
+            
+            default:
+            cout<< "Wrong Input.";
+                break;
+            }
+		break;
+	case 2:
+		cout << "1 for Toyota Fortuner, 2 for Ford Explorer:";
+            cin >> y;
+            switch (y)
+            {
+            case 1:
+                cout << "\nSelected Category:SUV.\nSelecte Model: Toyata Fortuner.";
+                break;
+            case 2:
+                cout << "\nSelected Category:SUV.\nSelecte Model: Ford Fortuner.";
+                break;
+            
+            default:
+            cout<< "Wrong Input.";
+                break;
+            }
+		break;
+	case 3:
+			cout << "1 for BMW 7-Series, 2 for Audi A8: ";
+            cin >> y;
+            switch (y)
+            {
+            case 1:
+                cout << "\nSelected Category:Luxary.\nSelecte Model: BMW 7-series.";
+                break;
+            case 2:
+                cout << "\nSelected Category:Luxary.\nSelecte Model: Audi A8.";
+                break;
+            
+            default:
+            cout<< "Wrong Input.";
+                break;
+            }
+	default:
+    cout << "Wrong Selection.";
+		break;
+	}
+	return 0;
+}
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Task 4:
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int x,y;
+    cout << "Choose Your Dicipline:\n1)Computer Sceince.\n2)Electrical Engineering.\n3)Mechanical Engineering.\n::";
+    cin >> x;
+
+    switch (x)
+    {
+    case 1:
+        cout<<"Choose Specialized Course:1) for Data Structures, 2) for Artificial Intelligence : ";
+        cin >> y;
+        cout << "\n------\t-------------\t-----------\t----------\t------------" <<endl ;
+        switch (y)
+        {
+        case 1:
+            cout << "Department: Computer Science.\nCourse Enroled: Data Structures.\nYou have Successfully Enroled for Data Structures Course." <<endl;
+            break;
+        case 2:
+            cout << "Department: Computer Science.\nCourse Enroled: Artificial Intelligence.\nYou have Successfully Enroled for Artificial Intelligence Course." <<endl;
+            break;
+        
+        default:
+            cout << "Wrong Input." << endl;
+            break;
+        }
+            break;
+    case 2:
+        cout<<"Choose Specialized Course:1) for Power Systems, 2) for Control Systems: ";
+        cin >> y;
+        cout << "\n------\t-------------\t-----------\t----------\t------------" <<endl ;
+        switch (y)
+        {
+        case 1:
+            cout << "Department: Electrical Engineering.\nCourse Enroled: Power System.\nYou have Successfully Enroled for Power System Course." <<endl;
+            break;
+        case 2:
+            cout << "Department: Electrical Engineering.\nCourse Enroled: Control Systems.\nYou have Successfully Enroled for Control Systems Course." <<endl;
+            break;
+        
+        default:
+            cout << "Wrong Input." << endl;
+            break;
+        }
+            break;
+    case 3:
+        cout<<"Choose Specialized Course:1) for Thermodynamics, 2) for Robotics: ";
+        cin >> y;
+        cout << "\n------\t-------------\t-----------\t----------\t------------" <<endl ;
+        switch (y)
+        {
+        case 1:
+            cout << "Department: Mechanical Engineering.\nCourse Enroled: Thermodynamics.\nYou have Successfully Enroled for Thermodynamics Course." <<endl;
+            break;
+        case 2:
+            cout << "Department: Mechanical Engineering.\nCourse Enroled: Robotics.\nYou have Successfully Enroled for Robotics Course." <<endl;
+            break;
+        
+        default:
+            cout << "Wrong Input." << endl;
+            break;
+        }
+            break;
+    
+    default:
+        cout << "Wrong Input."<<endl;
+        
+        break;
+}
+    system ("pause");
+    return 0;
+}
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+HomeTask:
+#include <iostream>
+using namespace std;
+
+int main() {
+	int x ,  y, z;
+	cout << "Enter 1 For Student, 2 for Teacher and 3 for Guest:";
+	cin >> x;
+	
+	switch (x)
+	{
+	case 1:
+			cout << "User Type: Student\nEnter 1 for Fiction, 2 for Science, 3 for History: ";
+            cin >> y;
+            switch (y)
+            {
+            case 1:
+                cout << "\nSelected Category:Fiction .\nEnter Number of Books to Borrow: ";
+                cin >> z;
+                if(z <= 0){cout << "Invalid Entry..." << endl ;}
+                else if(z <= 3){
+                    cout << "_________________________________________________________\n";
+                    cout << "User Type: Student | Selected Category: Fiction \n Succesfully Borrowed " << z << " Book/s" << endl ;
+                }
+                else{
+                    cout << "Sorry! You have exceeded the borrowing limit." << endl ;
+                }
+                break;
+            case 2: 
+                cout << "\nSelected Category:Science .\nEnter Number of Books to Borrow: ";
+                cin >> z;
+                if(z <= 0){cout << "Invalid Entry..." << endl;}
+                else if(z <= 3){
+                    cout << "_________________________________________________________\n";
+                    cout << "User Type: Student | Selected Category: Science \n Succesfully Borrowed " << z << " Book/s" << endl ;
+                }
+                else{
+                    cout << "Sorry! You have exceeded the borrowing limit." << endl ;
+                }
+                break;
+            case 3:
+                cout << "\nSelected Category:History .\nEnter Number of Books to Borrow: ";
+                cin >> z;
+                if(z <= 0){cout << "Invalid Entry..." << endl;}
+                else if(z <= 3){
+                    cout << "_________________________________________________________\n";
+                    cout << "User Type: Student | Selected Category: History \n Succesfully Borrowed " << z << " Book/s" << endl ;
+                }
+                else{
+                    cout << "Sorry! You have exceeded the borrowing limit." << endl ;
+                }
+                break;
+            default:
+            cout<< "Wrong Input.";
+                break;
+            }
+		break;
+    case 2:
+			cout << "User Type: Teacher\nEnter 1 for Research, 2 for Literature, 3 for Science: ";
+            cin >> y;
+            switch (y)
+            {
+            case 1:
+                cout << "\nSelected Category:Research .\nEnter Number of Books to Borrow: ";
+                cin >> z;
+                if(z <= 0){cout << "Invalid Entry..." << endl ;}
+                else if(z <= 5){
+                    cout << "_________________________________________________________\n";
+                    cout << "User Type: Teacher | Selected Category: Research \n Succesfully Borrowed " << z << " Book/s" << endl ;
+                }
+                else{
+                    cout << "Sorry! You have exceeded the borrowing limit." << endl ;
+                }
+                break;
+            case 2: 
+                cout << "\nSelected Category:Literature .\nEnter Number of Books to Borrow: ";
+                cin >> z;
+                if(z <= 0){cout << "Invalid Entry..." << endl;}
+                else if(z <= 5){
+                    cout << "_________________________________________________________\n";
+                    cout << "User Type: Teacher | Selected Category: Literature \n Succesfully Borrowed " << z << " Book/s" << endl ;
+                }
+                else{
+                    cout << "Sorry! You have exceeded the borrowing limit." << endl ;
+                }
+                break;
+            case 3:
+                cout << "\nSelected Category:Science .\nEnter Number of Books to Borrow: ";
+                cin >> z;
+                if(z <= 0){cout << "Invalid Entry..." << endl;}
+                else if(z <= 5){
+                    cout << "_________________________________________________________\n";
+                    cout << "User Type: Teacher | Selected Category: Science \n Succesfully Borrowed " << z << " Book/s" << endl ;
+                }
+                else{
+                    cout << "Sorry! You have exceeded the borrowing limit." << endl ;
+                }
+                break;
+            default:
+            cout<< "Wrong Input.";
+                break;
+            }
+		break;
+    case 3:
+			cout << "User Type: Guest \nEnter 1 for Magazines, 2 for Newspapers: ";
+            cin >> y;
+            switch (y)
+            {
+            case 1:
+                cout << "_________________________________________________________\n";
+                    cout << "User Type: Guest | Selected Category: Magazines \n You can only read here, can not borrow anything with you. " << endl ;
+                break;
+            case 2: 
+                cout << "_________________________________________________________\n";
+                    cout << "User Type: Guest | Selected Category: Newspapers \n You can only read here, can not borrow anything with you. " << endl ;
+                break;
+            default:
+            cout<< "Wrong Input.";
+                break;
+            }
+		break;
+    default:
+    cout << "Invalid Input...." ;
+    break;
+    }
+	return 0;
+}
+
+
+
+
